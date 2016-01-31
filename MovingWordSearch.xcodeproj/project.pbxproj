@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F968E8741C5EA49800222017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E8731C5EA49800222017 /* AppDelegate.swift */; };
-		F968E8761C5EA49800222017 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F968E8751C5EA49800222017 /* GameScene.sks */; };
 		F968E8781C5EA49800222017 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E8771C5EA49800222017 /* GameScene.swift */; };
 		F968E87A1C5EA49800222017 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E8791C5EA49800222017 /* GameViewController.swift */; };
 		F968E87D1C5EA49800222017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F968E87B1C5EA49800222017 /* Main.storyboard */; };
@@ -16,6 +15,10 @@
 		F968E8821C5EA49800222017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F968E8801C5EA49800222017 /* LaunchScreen.storyboard */; };
 		F968E88D1C5EA49800222017 /* MovingWordSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E88C1C5EA49800222017 /* MovingWordSearchTests.swift */; };
 		F968E8981C5EA49800222017 /* MovingWordSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E8971C5EA49800222017 /* MovingWordSearchUITests.swift */; };
+		F968E8A61C5EA50400222017 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F968E8A51C5EA50400222017 /* Sprites.atlas */; };
+		F968E8A81C5EA84C00222017 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E8A71C5EA84C00222017 /* Letter.swift */; };
+		F968E8AA1C5EA93B00222017 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E8A91C5EA93B00222017 /* Array2D.swift */; };
+		F968E8AC1C5EA95600222017 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968E8AB1C5EA95600222017 /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		F968E8701C5EA49800222017 /* MovingWordSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovingWordSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F968E8731C5EA49800222017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F968E8751C5EA49800222017 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		F968E8771C5EA49800222017 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		F968E8791C5EA49800222017 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F968E87C1C5EA49800222017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		F968E8931C5EA49800222017 /* MovingWordSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovingWordSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F968E8971C5EA49800222017 /* MovingWordSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingWordSearchUITests.swift; sourceTree = "<group>"; };
 		F968E8991C5EA49800222017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F968E8A51C5EA50400222017 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Sprites.atlas; path = Resources/Sprites.atlas; sourceTree = "<group>"; };
+		F968E8A71C5EA84C00222017 /* Letter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		F968E8A91C5EA93B00222017 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		F968E8AB1C5EA95600222017 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				F968E88B1C5EA49800222017 /* MovingWordSearchTests */,
 				F968E8961C5EA49800222017 /* MovingWordSearchUITests */,
 				F968E8711C5EA49800222017 /* Products */,
+				F968E8A51C5EA50400222017 /* Sprites.atlas */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,13 +109,15 @@
 			isa = PBXGroup;
 			children = (
 				F968E8731C5EA49800222017 /* AppDelegate.swift */,
-				F968E8751C5EA49800222017 /* GameScene.sks */,
 				F968E8771C5EA49800222017 /* GameScene.swift */,
 				F968E8791C5EA49800222017 /* GameViewController.swift */,
 				F968E87B1C5EA49800222017 /* Main.storyboard */,
 				F968E87E1C5EA49800222017 /* Assets.xcassets */,
 				F968E8801C5EA49800222017 /* LaunchScreen.storyboard */,
 				F968E8831C5EA49800222017 /* Info.plist */,
+				F968E8A71C5EA84C00222017 /* Letter.swift */,
+				F968E8A91C5EA93B00222017 /* Array2D.swift */,
+				F968E8AB1C5EA95600222017 /* Level.swift */,
 			);
 			path = MovingWordSearch;
 			sourceTree = "<group>";
@@ -235,10 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F968E8761C5EA49800222017 /* GameScene.sks in Resources */,
 				F968E8821C5EA49800222017 /* LaunchScreen.storyboard in Resources */,
 				F968E87F1C5EA49800222017 /* Assets.xcassets in Resources */,
 				F968E87D1C5EA49800222017 /* Main.storyboard in Resources */,
+				F968E8A61C5EA50400222017 /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F968E8AC1C5EA95600222017 /* Level.swift in Sources */,
 				F968E8781C5EA49800222017 /* GameScene.swift in Sources */,
 				F968E87A1C5EA49800222017 /* GameViewController.swift in Sources */,
 				F968E8741C5EA49800222017 /* AppDelegate.swift in Sources */,
+				F968E8A81C5EA84C00222017 /* Letter.swift in Sources */,
+				F968E8AA1C5EA93B00222017 /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hackathon2016.MovingWordSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -422,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hackathon2016.MovingWordSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
